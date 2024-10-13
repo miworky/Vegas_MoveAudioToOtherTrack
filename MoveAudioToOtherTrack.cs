@@ -99,11 +99,6 @@ namespace MoveAudioToOtherTrack
             MessageBox.Show("終了しました。");
         }
 
-        // オーディオファイルの最後を指定時間削除する
-        // musicTrack: 元のオーディオトラック
-        // movePattern: 移動するファイル名のパターン
-        // destinationTrack: 移動先のオーディオトラック
-        // writer: ログ出力用stream
         private bool MoveAudioToOtherTrackInternal(Track videoTrack, string movePattern, Track destinationTrack, System.IO.StreamWriter writer)
         {
             Regex pattern = new Regex(movePattern);
